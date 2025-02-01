@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <div class="rules">
+    Rules: <br>
+    <hr>
+    Gameplay: <br>
+      1.The game presents a sequence of colors that flash in a random order. <br>
+      2.The player must repeat the sequence by clicking the buttons (colors) in the correct order. <br>
+      3.After each correct repetition, the sequence gets longer by one color. <br>
+    <hr>
+    Game Over: If the player clicks the wrong button or fails to repeat the sequence correctly, the game ends.
+    <hr>
+    Winning: The game continues until the player completes a specific number of levels or until they make an error, causing the game to end.
+  </div>
+  <center>
+    <div class="head">
+      <h1 id="level-title">Press Start</h1>
+    </div>
+  </center>
+  
+  <center>
+    <div class="container">
+      <div class="row">
+
+        <div type="button" id="green" class="btn green">
+
+        </div>
+
+        <div type="button" id="red" class="btn red">
+
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div type="button" id="yellow" class="btn yellow">
+
+        </div>
+        <div type="button" id="blue" class="btn blue">
+
+        </div>
+      </div>
+
+    </div>
+  </center>
+
+  <center>
+    <button class="start">Start</button>
+  </center>
+
+  <center>
+    <button id="rules">❔</button>
+    <button id="muteButton">🔊</button>
+  </center>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="game.js"></script>
+
+</body>
+
+</html>
